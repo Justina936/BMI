@@ -11,7 +11,7 @@ app.get("/", function(req, res){
   res.sendFile(__dirname + "/bmiCalculator.html");
 
 });
-app.post("/bmi", function(req, res){
+app.post("/", function(req, res){
   var height = Number(req.body.height);
   var weight = Number(req.body.weight);
   result = weight/((height*height)/100);
